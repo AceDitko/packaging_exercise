@@ -31,13 +31,13 @@ test_size: 0.1
 random_state: 0
 
 unused_fields:
- - name
- - ticket
- - boat
- - body
- - home.dest
+  - name
+  - ticket
+  - boat
+  - body
+  - home.dest
 
- numerical_vars:
+numerical_vars:
   - age
   - fare
 
