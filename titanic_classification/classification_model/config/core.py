@@ -20,8 +20,7 @@ class AppConfig(BaseModel):
     """
 
     package_name: str
-    training_data_file: str
-    test_data_file: str
+    unprocessed_data: str
     pipeline_save_file: str
 
 
@@ -32,28 +31,13 @@ class ModelConfig(BaseModel):
     """
 
     target: str
-    variables_to_rename: Dict
-    features: List[str]
+    unused_fields: Sequence[str]
+    features: Sequence[str]
     test_size: float
     random_state: int
-    alpha: float
-    categorical_vars_with_na_frequent: List[str]
-    categorical_vars_with_na_missing: List[str]
-    numerical_vars_with_na: List[str]
-    temporal_vars: List[str]
-    ref_var: str
-    numericals_log_vars: Sequence[str]
-    binarize_vars: Sequence[str]
-    qual_vars: List[str]
-    exposure_vars: List[str]
-    finish_vars: List[str]
-    garage_vars: List[str]
+    numerical_vars: Sequence[str]
     categorical_vars: Sequence[str]
-    qual_mappings: Dict[str, int]
-    exposure_mappings: Dict[str, int]
-    garage_mappings: Dict[str, int]
-    finish_mappings: Dict[str, int]
-
+    cabin_vars: Sequence[str]
 
 class Config(BaseModel):
     """Master config object."""
