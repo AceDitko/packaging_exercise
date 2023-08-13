@@ -64,7 +64,7 @@ def pre_process(*, dataframe: pd.DataFrame) -> pd.DataFrame:
     data["age"] = data["age"].astype("float")
 
     # Drop unnecessary variables
-    data.drop(label=config.model_config.unused_fields, axis=1, inplace=True)
+    data.drop(labels=config.model_config.unused_fields, axis=1, inplace=True)
 
     return data
 
