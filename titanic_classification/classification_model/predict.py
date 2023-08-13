@@ -22,7 +22,7 @@ def make_prediction(
     results = {"predictions": None, "version": _version, "errors": errors}
 
     if not errors:
-        predictions = _price_pipe.predict(
+        predictions = _titanic_pipe.predict(
             X=validated_data[config.model_config.features]
         )
         results = {
