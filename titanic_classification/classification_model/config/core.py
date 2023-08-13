@@ -20,7 +20,7 @@ class AppConfig(BaseModel):
     """
 
     package_name: str
-    unprocessed_data: str
+    raw_data: str
     pipeline_save_file: str
 
 

@@ -2,7 +2,7 @@
 package_name: titanic_classification
 
 # Data Files
-unprocessed_data_file: unprocessed.csv
+raw_data_file: raw.csv
 training_data_file: train.csv
 test_data_file: test.csv
 

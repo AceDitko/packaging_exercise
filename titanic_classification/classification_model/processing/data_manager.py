@@ -68,7 +68,7 @@ def pre_process(*, dataframe: pd.Dataframe) -> pd.Dataframe:
     return data
 
 
-def _load_unprocessed_dataset(*, file_name: str) -> pd.DataFrame:
+def _load_raw_dataset(*, file_name: str) -> pd.DataFrame:
     "Load in dataset that has not been split into train/test"
     dataframe = pd.read_csv(Path(f"{DATASET_DIR}/{file_name}"))
     return dataframe
