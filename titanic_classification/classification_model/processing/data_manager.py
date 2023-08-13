@@ -37,7 +37,7 @@ def get_title(passenger: str) -> str:
         return 'Other'
     
 
-def pre_process(*, dataframe: pd.DataFrame) -> pd.Dataframe:
+def pre_process(*, dataframe: pd.DataFrame) -> pd.DataFrame:
     """Perform pre-processing steps before dataframe enters pipeline.
     
     Performs the listed preprocessing steps on the given dataframe
