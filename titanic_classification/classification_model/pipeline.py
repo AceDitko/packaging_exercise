@@ -16,7 +16,7 @@ from sklearn.preprocessing import StandardScaler
 from classification_model.config.core import config
 from classification_model.processing.features import ExtractLetterTransformer
 
-price_pipe = Pipeline(
+titanic_pipe = Pipeline(
     [
         # ===== IMPUTATION =====
         # impute categorical variables with string missing
