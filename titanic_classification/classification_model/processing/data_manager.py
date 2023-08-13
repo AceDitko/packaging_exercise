@@ -21,7 +21,8 @@ def get_first_cabin(row: Any) -> Union[str, float]:
         return row.split()[0]
     except AttributeError:
         return np.nan
-    
+
+
 def get_title(passenger: str) -> str:
     """Extracts the title (Mr, Ms, etc) from the name variable."""
     line = passenger
@@ -35,11 +36,11 @@ def get_title(passenger: str) -> str:
         return 'Master'
     else:
         return 'Other'
-    
+
 
 def pre_process(*, dataframe: pd.DataFrame) -> pd.DataFrame:
     """Perform pre-processing steps before dataframe enters pipeline.
-    
+
     Performs the listed preprocessing steps on the given dataframe
     in the following order:
     1. Replaces '?' with np.nan

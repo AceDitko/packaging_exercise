@@ -1,6 +1,7 @@
 import typing as t
 
 import pandas as pd
+import numpy as np
 
 from classification_model import __version__ as _version
 from classification_model.config.core import config
