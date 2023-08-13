@@ -22,7 +22,7 @@ class ExtractLetterTransformer(BaseEstimator, TransformerMixin):
             X = X.copy()
 
             for feature in self.variables:
-                X[feature] = x[feature].str[0]
+                X[feature] = X[feature].str[0]
 
             return X
 
