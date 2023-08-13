@@ -39,6 +39,7 @@ class ModelConfig(BaseModel):
     categorical_vars: Sequence[str]
     cabin_vars: Sequence[str]
 
+
 class Config(BaseModel):
     """Master config object."""
 
